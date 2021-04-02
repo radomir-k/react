@@ -82,6 +82,11 @@ ol, ul { list-style: none; }
 }
 
 .Playlist-item-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
   padding: .5rem .4rem .5rem .4rem;
   margin-bottom: .2rem;
   border-radius: .5rem .5rem .0rem .0rem;
@@ -99,4 +104,16 @@ ol, ul { list-style: none; }
   border-radius: .0rem .0rem .5rem .5rem;
   background-color: #424752;
   text-align: right;
+}
+
+.volumeUp::before {
+  content: '\e050';
+  font-size: 1.6rem;
+  color: #acedff;
+}
+
+.volumeDown::before {
+  content: '\e04d';
+  font-size: 2.2rem;
+  color: #acedff;
 }

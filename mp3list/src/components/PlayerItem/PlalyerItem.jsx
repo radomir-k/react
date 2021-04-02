@@ -6,14 +6,14 @@ import './PlayerItem.css';
 
 function PlayerItem(props) {
 
-    const [playState, setPlayStatus] = useState('play');
-    const [activState, setActiveStatus] = useState('');
+    const [playState, setPlayStatus] = useState(props.onplay);
+    const [activState, setActiveStatus] = useState(props.onstate);
 
     const playStateChange = useCallback(
         () => {
             if (playState === 'play') {
                 setPlayStatus('pause');
-                setActiveStatus('is-activ');
+                setActiveStatus('activ');
             }
             if (playState === 'pause') {
                 setPlayStatus('play');
@@ -29,13 +29,13 @@ function PlayerItem(props) {
 
 
     return (
-        <div className={`Playlist-table data ${activState}`}>
+        <div className={`Playlist-table data is-${activState}`}>
             <div className='Playlist-item id'>
                 {props.id}
             </div>
 
-            <div className="Playlist-item song">
-                {props.valNameSong}
+            <div className='Playlist-item song'>
+                {`${props.author} -|- ${props.song}`}
             </div>
 
             <div className='Playlist-item time'>
