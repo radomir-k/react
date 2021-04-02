@@ -1,0 +1,27 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: aliceblue;
+    background-color: rgb(167, 190, 233);
+}
+
+.todo-item--state {
+    font-weight: 700;
+}
+
+.todo-item--state.st-new {
+    color: rgb(231, 58, 145);
+}
+
+.todo-item--state.st-progress {
+    color: rgb(255, 196, 0);
+}
+
+.todo-item--state.st-done {
+    color: rgb(143, 238, 0);
+}

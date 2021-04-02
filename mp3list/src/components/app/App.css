@@ -1,0 +1,119 @@
+.App {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.App-header {
+  display: flex;
+  min-height: 3vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1.2vmin);
+  background-color: #282c34;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+  user-select: none;
+  margin: .7rem;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background-color: #424752;
+  color: white;
+}
+
+a { text-decoration: none; }
+ol, ul { list-style: none; }
+
+.Playlist-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 60%;
+  margin-top: 8rem;
+  padding: .4rem;
+  background-color: #282c34;
+  color: white;
+  border-radius: .7rem .7rem .7rem .7rem;
+  font-size: 1.2rem;
+}
+
+.Playlist-header {
+  margin: 0 0 0 0;
+  line-height: 1;
+  padding: .5rem;
+}
+
+.Playlist-table.header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: .4fr 2fr .8fr 1.2fr;
+  grid-template-rows: auto;
+  grid-column-gap: .2rem;
+  grid-row-gap: .2rem;
+  font-weight: 700;
+  color:  white;
+}
+
+.Playlist-item-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem .4rem .5rem .4rem;
+  margin-bottom: .2rem;
+  border-radius: .5rem .5rem .0rem .0rem;
+  background-color: #424752;
+}
+
+.Playlist-table.footer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  color: white;
+  padding: 1rem 0 1rem 0;
+  margin-top: .1rem;
+  border-radius: .0rem .0rem .5rem .5rem;
+  background-color: #424752;
+  text-align: right;
+}
+
+.volumeUp::before {
+  content: '\e050';
+  font-size: 1.6rem;
+  color: #acedff;
+}
+
+.volumeDown::before {
+  content: '\e04d';
+  font-size: 2.2rem;
+  color: #acedff;
+}

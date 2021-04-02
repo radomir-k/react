@@ -1,0 +1,79 @@
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+.Playlist-table.data {
+  display: grid;
+  width: 100%;
+  grid-template-columns: .4fr 2fr .8fr 1.2fr;
+  grid-template-rows: auto;
+  grid-column-gap: .2rem;
+  grid-row-gap: .2rem;
+  font-weight: 500;
+  color:  white;
+}
+
+.Playlist-table.data.is-activ {
+  background-color: #61DAFB;
+  color: #61DAFB;
+}
+
+.Playlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .1rem;
+  margin-bottom: .1rem;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .3rem .6rem .3rem .6rem;
+  background-color: #585f6d;
+}
+
+button {
+  display: flex;
+  width: 2.2rem;
+  height: 2.2rem;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0 .1rem  0 .1rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+button::before {
+  font-size: 2.4rem;
+  color: #61DAFB;
+}
+
+.btn-on::before {
+  content: '\e039';
+}
+
+.btn-on.is-pause::before {
+  content: '\e036';
+}
+
+.btn-stop::before {
+  content: '\ef71';
+}
+
+button:hover::before {
+  color: #acedff;
+}
+
+button:active:before {
+  color: #4c9eb4;
+}
+
+.timeSlider {
+  margin: 0 .4rem 0 .8rem;
+  }
+
+
+
